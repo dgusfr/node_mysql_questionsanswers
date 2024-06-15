@@ -23,7 +23,7 @@ app.get("/:nome/:lang", (req, res) => {
   });
 });
 
-app.get("/ask", (req, res) => {
+app.get("/", (req, res) => {
   res.render("ask");
 });
 

@@ -9,21 +9,42 @@
 /* Estilos gerais do corpo */
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
   background-color: #f4f4f9;
+  height: 100vh;
 }
 
-/* Estilos do container principal */
+/* Header */
+header {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #007bff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+  height: 50px;
+}
+
+header .title h1 {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* Container principal */
 .container {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  width: 100%;
 }
 
-/* Estilos do card */
+/* Card */
 .card {
   background-color: #ffffff;
   padding: 20px;
@@ -33,14 +54,14 @@ body {
   width: 100%;
 }
 
-/* Estilos do título */
-.card h1 {
+/* Título do card */
+.card h2 {
   margin-bottom: 20px;
   text-align: center;
   color: #333;
 }
 
-/* Estilos do formulário */
+/* Formulário */
 form {
   display: flex;
   flex-direction: column;
@@ -64,7 +85,7 @@ textarea {
   height: 100px;
 }
 
-/* Estilos do botão */
+/* Botão */
 button {
   padding: 10px;
   background-color: #007bff;
