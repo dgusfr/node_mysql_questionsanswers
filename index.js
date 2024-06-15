@@ -27,6 +27,11 @@ app.get("/", (req, res) => {
   res.render("ask");
 });
 
+//rota responsavél por coletar as informações do formulario
+app.post("/saveask", (req, res) => {
+  res.send("Formulário recebido");
+});
+
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });

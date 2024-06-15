@@ -19,23 +19,19 @@
     </div>
   </header>
 
-  <!-- Main Content -->
+
   <div class="container">
     <div class="card">
       <h2>Pergunte aqui</h2>
       <div class="ask">
-        <form>
-          <!-- Campo de título -->
+        <!-- enviando dados do formulario para o backend -->
+        <form method="POST" action="/saveask">
           <label for="title">Título:</label>
           <input type="text" id="title" name="title" placeholder="Digite o título da sua pergunta" required>
           <br><br>
-
-          <!-- Campo de descrição -->
           <label for="description">Descrição:</label>
           <textarea id="description" name="description" rows="4" cols="50" placeholder="Digite a descrição da sua pergunta" required></textarea>
           <br><br>
-
-          <!-- Botão de enviar -->
           <button type="submit">Perguntar!</button>
         </form>
       </div>
