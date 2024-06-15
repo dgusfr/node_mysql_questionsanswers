@@ -23,6 +23,10 @@ app.get("/:nome/:lang", (req, res) => {
   });
 });
 
+app.get("/ask", (req, res) => {
+  res.render("ask");
+});
+
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
