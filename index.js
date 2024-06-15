@@ -1,8 +1,12 @@
 const express = require("express");
 const app = express(); //instance of express
+const bodyParser = require("body-parser");
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
+//comando para decodificar dados do formulario
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.get("/:nome/:lang", (req, res) => {
   var name = req.params.nome;
@@ -29,7 +33,14 @@ app.get("/", (req, res) => {
 
 //rota responsavél por coletar as informações do formulario
 app.post("/saveask", (req, res) => {
-  res.send("Formulário recebido");
+  var title = req.body.title;
+  var description = req.body.description;
+  res.send(
+    "Formulário recebido com sucesso! Titulo: " +
+      title +
+      " Descrição: " +
+      description
+  );
 });
 
 app.listen(3000, () => {

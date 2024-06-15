@@ -9,7 +9,6 @@
 </head>
 
 <body>
-  <!-- Header -->
   <header>
     <div class="logo">
       <img src="/img/logo.png" alt="Logo">
@@ -18,13 +17,11 @@
       <h1>Ask&Answers</h1>
     </div>
   </header>
-
-
   <div class="container">
     <div class="card">
       <h2>Pergunte aqui</h2>
       <div class="ask">
-        <!-- enviando dados do formulario para o backend -->
+        <!-- send form data to backend -->
         <form method="POST" action="/saveask">
           <label for="title">Título:</label>
           <input type="text" id="title" name="title" placeholder="Digite o título da sua pergunta" required>
