@@ -1,0 +1,16 @@
+{
+  "name": "qanda_node_mysql",
+  "version": "1.0.0",
+  "description": "aplicação de perguntas e respostas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Diego Franco",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.3"
+  }
+}
