@@ -31,8 +31,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/perguntas", (req, res) => {
-  pergunta;
+app.get("/ask", (req, res) => {
   res.render("ask");
 });
 
