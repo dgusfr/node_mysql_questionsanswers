@@ -17,3 +17,5 @@ const Ask = db.define("asks", {
 Ask.sync({ force: false }).then(() => {
   console.log("Table created");
 });
+
+module.exports = Ask;

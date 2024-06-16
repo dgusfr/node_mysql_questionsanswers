@@ -21,19 +21,26 @@ db.authenticate()
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+//Routes
 app.get("/", (req, res) => {
+  res.render("index");
+});
+
+app.get("/ask", (req, res) => {
   res.render("ask");
 });
 
 app.post("/saveask", (req, res) => {
   var title = req.body.title;
   var description = req.body.description;
-  res.send(
-    "Formulário recebido com sucesso! Titulo: " +
-      title +
-      " Descrição: " +
-      description
-  );
+
+  //save ask in DB (same of INSERT INTO)
+  AskModel.create({
+    title: title,
+    description: description,
+  }).then(() => {
+    res.redirect("/");
+  });
 });
 
 //Server
