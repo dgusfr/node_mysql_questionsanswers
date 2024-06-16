@@ -1,9 +1,20 @@
 const express = require("express");
 const app = express(); //instance of express
 const bodyParser = require("body-parser");
+const db = require("./database/database");
+
+//Database
+db.authenticate()
+  .then(() => {
+    console.log("Conexão feita com o banco de dados!");
+  })
+  .catch((msgErro) => {
+    console.log(msgErro);
+  });
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
+
 //comando para decodificar dados do formulario
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
