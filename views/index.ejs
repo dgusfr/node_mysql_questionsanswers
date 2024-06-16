@@ -17,25 +17,27 @@
       <h1>Ask&Answers</h1>
     </div>
   </header>
-  <h1>Deseja fazer uma pergunta?</h1>
-  <a href="/ask" class="btn">Fazer Pergunta</a>
-  <h1>Lista de Perguntas</h1>
-  <br>
   <div class="container">
-    <% asks.forEach(ask=> { %>
+    <hr>
+    <h1>Perguntas</h1>
+    <hr>
+    <a href="/perguntar" class="btn-primary">Perguntar</a>
+    <hr>
+    <% perguntas.forEach(pergunta=> { %>
+      <br>
       <div class="card">
-        <h2>
-          <%= ask.title %>
-        </h2>
-        <p>
-          <%= ask.description %>
-        </p>
-        <!-- <div>
-          <button class="btn">Responder</button>
-        </div> -->
+        <div class="card-body">
+          <h3>
+            <%= pergunta.titulo %>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <a href="/pergunta/<%= pergunta.id %>">
+            <button class="btn-primary">Responder</button>
+          </a>
+        </div>
       </div>
       <% }) %>
-
   </div>
 </body>
 
