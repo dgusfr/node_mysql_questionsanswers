@@ -23,10 +23,16 @@ app.use(bodyParser.json());
 
 //Routes
 app.get("/", (req, res) => {
-  res.render("index");
+  //list the questions in the DB ( equivalent to SELECT * FROM asks)
+  AskModel.findAll({ raw: true, order: [["id", "DESC"]] }).then((asks) => {
+    res.render("index", {
+      asks: asks,
+    });
+  });
 });
 
-app.get("/ask", (req, res) => {
+app.get("/perguntas", (req, res) => {
+  pergunta;
   res.render("ask");
 });
 
