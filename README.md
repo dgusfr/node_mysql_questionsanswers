@@ -101,7 +101,6 @@ npm install mysql2@^1.7.0
 
 sequelize
 
-
 ```
 npm install sequelize@^5.19.1
 ```
