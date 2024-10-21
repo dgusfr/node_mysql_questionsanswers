@@ -74,6 +74,7 @@ npm install
 Este comando criará a pasta node_modules e instalará todas as dependências necessárias.
 
 `4.` Instale Dependências Individualmente (Opcional)
+
 Se preferir, você pode instalar cada dependência individualmente usando os seguintes comandos:
 
 ```
