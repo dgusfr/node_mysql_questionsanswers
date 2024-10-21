@@ -60,7 +60,7 @@ Clone o repositório do projeto para o seu ambiente local:
 
 git clone https://github.com/repositorio
 
-`2.` Navegue até o Diretório do Projeto
+2. Navegue até o Diretório do Projeto
 Use o terminal para navegar até o diretório do projeto.
 
 3. Instale as Dependências
