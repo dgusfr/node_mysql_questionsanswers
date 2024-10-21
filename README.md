@@ -55,7 +55,7 @@ O código funciona basicamente no Backend, possuindo uma interface básica em EJ
 
 ## Como Usar
 
-`1.` Clone o Repositório
+1. Clone o Repositório
 Clone o repositório do projeto para o seu ambiente local:
 
 git clone https://github.com/repositorio
