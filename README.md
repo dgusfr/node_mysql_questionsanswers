@@ -64,7 +64,8 @@ git clone https://github.com/repositorio
 Use o terminal para navegar até o diretório do projeto.
 
 3. Instale as Dependências
-   Execute o comando abaixo para instalar todas as dependências listadas no arquivo package.json:
+   
+Execute o comando abaixo para instalar todas as dependências listadas no arquivo package.json:
 
 ```
 npm install
