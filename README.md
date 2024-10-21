@@ -1,6 +1,6 @@
 # Plataforma de perguntas e respostas
 
-Este projeto implementa uma plataforma de perguntas e respostas com Node, Express e MySQL.
+Este projeto implementa uma plataforma de perguntas e respostas utilizando Node, Express e MySQL.
 
 ## Interface
 
