@@ -1,39 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perguntas</title>
-  <link rel="stylesheet" href="/css/ask.css">
-</head>
-
+<%- include partials/header.ejs %>
 <body>
-  <header>
-    <div class="logo">
-      <img src="/img/logo.png" alt="Logo">
+    <%- include partials/navbar.ejs %>
+    <div class="container">
+        <div class="card" id="formulario-pergunta">
+            <div class="card-header">
+                <h3>Realizar pergunta</h3>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="/salvarpergunta">
+                    <label>Título</label>
+                        <input type="text" placeholder="Título" class="form-control" name="titulo">
+                        <br><label>Descrição</label>
+                        <textarea placeholder="Descreva sua pergunta aqui" class="form-control" name="descricao"></textarea>
+                        <br>
+                        <button class="btn btn-primary">Perguntar</button>
+                </form>
+            </div>
+        </div>
     </div>
-    <div class="title">
-      <h1>Ask&Answers</h1>
-    </div>
-  </header>
-  <div class="container">
-    <div class="card">
-      <h2>Pergunte aqui</h2>
-      <div class="ask">
-        <!-- send form data to backend -->
-        <form method="POST" action="/saveask">
-          <label for="title">Título:</label>
-          <input type="text" id="title" name="title" placeholder="Digite o título da sua pergunta" required>
-          <br><br>
-          <label for="description">Descrição:</label>
-          <textarea id="description" name="description" rows="4" cols="50" placeholder="Digite a descrição da sua pergunta" required></textarea>
-          <br><br>
-          <button type="submit">Perguntar!</button>
-        </form>
-      </div>
-    </div>
-  </div>
 </body>
-
-</html>
+<%- include partials/footer.ejs %>

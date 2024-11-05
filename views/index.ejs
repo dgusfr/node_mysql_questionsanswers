@@ -1,44 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perguntas e Respostas</title>
-  <link rel="stylesheet" href="/css/index.css">
-</head>
-
+<%- include partials/header.ejs %>
 <body>
-  <header>
-    <div class="logo">
-      <img src="/img/favicon.png" alt="Logo">
-    </div>
-    <div class="title">
-      <h1>Ask&Answers</h1>
-    </div>
-  </header>
-  <div class="container">
-    <hr>
-    <h1>Perguntas</h1>
-    <hr>
-    <a href="/perguntar" class="btn-primary">Perguntar</a>
-    <hr>
-    <% perguntas.forEach(pergunta=> { %>
-      <br>
-      <div class="card">
-        <div class="card-body">
-          <h3>
-            <%= pergunta.titulo %>
-          </h3>
-        </div>
-        <div class="card-footer">
-          <a href="/pergunta/<%= pergunta.id %>">
-            <button class="btn-primary">Responder</button>
-          </a>
-        </div>
-      </div>
-      <% }) %>
-  </div>
-</body>
+    <%- include partials/navbar.ejs %>
+    <div class="container">
+        <hr>
+        <h1> Perguntas </h1>
+        <hr>
+        <a href="/perguntar" class="btn btn-primary">Perguntar</a>
+        <hr>
+        <% perguntas.forEach(pergunta => { %>
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <h3><%= pergunta.titulo %></h3>
+                </div>
+                <div class="card-footer">
+                    <a href="/pergunta/<%= pergunta.id %>"</a><button class="btn btn-primary">Responder</button></a>
+                </div>
+            </div>
+        <% }) %>
 
-</html>
+    </div>
+
+</body>
+<%- include partials/footer.ejs %>

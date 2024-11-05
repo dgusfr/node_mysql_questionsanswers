@@ -1,49 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Guia perguntas</title>
-  <link rel="stylesheet" href="/css/styles.css">
-</head>
-
+<%- include partials/header.ejs %>
 <body>
-  <header>
-    <title>Perguntas e Respostas</title>
-  </header>
-  <div class="container">
-    <hr>
-    <h1>
-      <%= question.titulo %>
-    </h1>
-    <p>
-      <%= question.descricao %>
-    </p>
-    <hr>
-    <!-- <form method="POST" action="/responder">
+    <%- include partials/navbar.ejs %>
+    <div class="container">
+        <hr>
+        <h1><%= pergunta.titulo %></h1>
+        <p><%= pergunta.descricao %></p>
+        <hr>
+        <form method="POST" action="/responder">
             <h3>Responda</h3>
             <label>Resposta:</label>
             <textarea placeholder="Digite sua resposta" class="form-control" name="corpo"></textarea><br>
             <input type="hidden" name="pergunta" value="<%= pergunta.id %>">
-            <button type="submit" class="btn-primary">Responder</button>
+            <button type="submit" class="btn btn-primary">Responder</button>
         </form>
         <hr>
         <h3>Respostas</h3>
         <hr>
-        <% respostas.forEach(resposta=> { %>
+        <% respostas.forEach(resposta => {%>
             <br>
             <div class="card">
                 <div class="card-body">
-                    <p>
-                        <%= resposta.corpo %>
-                    </p>
+                    <p><%= resposta.corpo %></p>
                 </div>
             </div>
-            <% }) %> -->
-
-  </div>
+        <% }) %>
+    </div>
 </body>
-
-</html>
+<%- include partials/footer.ejs %>
