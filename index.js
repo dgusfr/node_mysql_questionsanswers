@@ -1,91 +1,82 @@
 const express = require("express");
-const app = express();
 const bodyParser = require("body-parser");
 const db = require("./database/database");
 const Pergunta = require("./database/Pergunta");
 const Resposta = require("./database/Resposta");
-//Database
-connection
-  .authenticate()
-  .then(() => {
-    console.log("Conexão feita com o banco de dados!");
-  })
-  .catch((msgErro) => {
-    console.log(msgErro);
-  });
 
-// Estou dizendo para o Express usar o EJS como View engine
+const app = express();
+const PORT = 3000;
+
+// Conexão com o banco de dados
+db.authenticate()
+  .then(() => console.log("Conexão com o banco de dados estabelecida!"))
+  .catch((error) =>
+    console.error("Erro ao conectar ao banco de dados:", error)
+  );
+
+// Configuração do EJS e arquivos estáticos
 app.set("view engine", "ejs");
 app.use(express.static("public"));
-// Body parser
+
+// Configuração do Body Parser
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Rotas
-app.get("/", (req, res) => {
-  Pergunta.findAll({
-    raw: true,
-    order: [
-      ["id", "DESC"], // ASC = Crescente || DESC = Decrescente
-    ],
-  }).then((perguntas) => {
-    res.render("index", {
-      perguntas: perguntas,
+// Rota principal - Listagem de perguntas
+app.get("/", async (req, res) => {
+  try {
+    const perguntas = await Pergunta.findAll({
+      raw: true,
+      order: [["id", "DESC"]],
     });
-  });
+    res.render("index", { perguntas });
+  } catch (error) {
+    res.status(500).send("Erro ao carregar perguntas.");
+  }
 });
 
-app.get("/perguntar", (req, res) => {
-  res.render("perguntar");
-});
+// Rota para o formulário de nova pergunta
+app.get("/perguntar", (req, res) => res.render("perguntar"));
 
-app.post("/salvarpergunta", (req, res) => {
-  var titulo = req.body.titulo;
-  var descricao = req.body.descricao;
-
-  Pergunta.create({
-    titulo: titulo,
-    descricao: descricao,
-  }).then(() => {
+// Rota para salvar uma nova pergunta
+app.post("/salvarpergunta", async (req, res) => {
+  const { titulo, descricao } = req.body;
+  try {
+    await Pergunta.create({ titulo, descricao });
     res.redirect("/");
-  });
+  } catch (error) {
+    res.status(500).send("Erro ao salvar a pergunta.");
+  }
 });
 
-app.get("/pergunta/:id", (req, res) => {
-  var id = req.params.id;
-  Pergunta.findOne({
-    where: { id: id },
-  }).then((pergunta) => {
-    if (pergunta != undefined) {
-      // Pergunta encontrada
+// Rota para exibir uma pergunta específica e suas respostas
+app.get("/pergunta/:id", async (req, res) => {
+  const { id } = req.params;
+  try {
+    const pergunta = await Pergunta.findOne({ where: { id } });
 
-      Resposta.findAll({
-        where: { perguntaId: pergunta.id },
-        order: [["id", "DESC"]],
-      }).then((respostas) => {
-        res.render("pergunta", {
-          pergunta: pergunta,
-          respostas: respostas,
-        });
-      });
-    } else {
-      // Não encontrada
-      res.redirect("/");
-    }
-  });
+    if (!pergunta) return res.redirect("/");
+
+    const respostas = await Resposta.findAll({
+      where: { perguntaId: pergunta.id },
+      order: [["id", "DESC"]],
+    });
+    res.render("pergunta", { pergunta, respostas });
+  } catch (error) {
+    res.status(500).send("Erro ao carregar a pergunta.");
+  }
 });
 
-app.post("/responder", (req, res) => {
-  var corpo = req.body.corpo;
-  var perguntaId = req.body.pergunta;
-  Resposta.create({
-    corpo: corpo,
-    perguntaId: perguntaId,
-  }).then(() => {
-    res.redirect("/pergunta/" + perguntaId);
-  });
+// Rota para salvar uma resposta para uma pergunta específica
+app.post("/responder", async (req, res) => {
+  const { corpo, pergunta } = req.body;
+  try {
+    await Resposta.create({ corpo, perguntaId: pergunta });
+    res.redirect(`/pergunta/${pergunta}`);
+  } catch (error) {
+    res.status(500).send("Erro ao salvar a resposta.");
+  }
 });
 
-app.listen(8080, () => {
-  console.log("App rodando!");
-});
+// Inicialização do servidor
+app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
