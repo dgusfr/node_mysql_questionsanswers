@@ -6,13 +6,14 @@
   font-family: Arial, sans-serif;
 }
 
-/* Estilos gerais do corpo */
+/* Estrutura Geral */
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #f4f4f9;
-  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
 }
 
 /* Header */
@@ -35,18 +36,55 @@ header .title h1 {
   font-size: 24px;
 }
 
-/* Título principal */
-h1 {
-  margin: 20px 0;
-  color: #333;
+/* Footer */
+footer {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 14px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Container principal */
+footer p {
+  margin: 0;
+}
+
+/* Conteúdo Principal */
 .container {
+  flex: 1;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 20px;
+}
+
+/* Card */
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #007bff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.card p {
+  color: #555;
+  font-size: 16px;
 }
 
 /* Botão */
@@ -68,26 +106,39 @@ h1 {
   background-color: #0056b3;
 }
 
-/* Card */
-.card {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  width: 100%;
-  margin-bottom: 20px;
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Título do card */
-.card h2 {
-  margin-bottom: 10px;
-  color: #007bff;
-  font-size: 20px;
-}
-
-/* Descrição do card */
-.card p {
+label {
+  margin-bottom: 5px;
   color: #555;
-  font-size: 16px;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  resize: none;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
