@@ -2,12 +2,12 @@
   "name": "qanda_node_mysql",
   "version": "1.0.0",
   "description": "aplicação de perguntas e respostas.",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "jest"
   },
   "author": "Diego Franco",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^2.7.1",
