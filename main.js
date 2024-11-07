@@ -40,9 +40,11 @@ app.get("/perguntar", (req, res) => res.render("perguntar"));
 
 // Rota para salvar uma nova pergunta
 app.post("/salvarpergunta", async (req, res) => {
-  const { titulo, descricao } = req.body;
+  const titulo = req.body.titulo;
+  const descricao = req.body.descricao;
+
   try {
-    await Pergunta.create({ titulo, descricao });
+    await Pergunta.create({ titulo: titulo, descricao: descricao });
     res.redirect("/");
   } catch (error) {
     res.status(500).send("Erro ao salvar a pergunta.");
