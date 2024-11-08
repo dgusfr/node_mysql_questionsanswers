@@ -12,11 +12,7 @@ INSERT INTO usuarios(nome, email, idade) VALUES (
 	8
 );
 
-INSERT INTO usuarios(nome, email, idade) VALUES (
-	"João",
-	"joão@email.com",
-	18
-);
+
 
 
 
