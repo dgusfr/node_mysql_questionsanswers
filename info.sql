@@ -4,8 +4,6 @@ CREATE TABLE usuarios (
     idade INT
 );
 
-SHOW TABLES;
-
 
 
 
