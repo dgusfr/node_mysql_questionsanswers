@@ -54,56 +54,6 @@ O código funciona basicamente no Backend, possuindo uma interface básica em EJ
 
 ## Como Usar
 
-1. Clone o Repositório
-   Clone o repositório do projeto para o seu ambiente local:
-
-git clone https://github.com/repositorio
-
-2. Navegue até o Diretório do Projeto
-   Use o terminal para navegar até o diretório do projeto.
-
-3. Instale as Dependências
-
-Execute o comando abaixo para instalar todas as dependências listadas no arquivo package.json:
-
-```
-npm install
-```
-
-Este comando criará a pasta node_modules e instalará todas as dependências necessárias.
-
-4. Instale Dependências Individualmente (Opcional)
-
-Se preferir, você pode instalar cada dependência individualmente usando os seguintes comandos:
-
-```bash
-npm install body-parser --save
-```
-
-EJS
-
-```bash
-npm install ejs@^2.7.1
-```
-
-express
-
-```bash
-npm install express@^4.17.1
-```
-
-mysql2
-
-```bash
-npm install mysql2@^1.7.0
-```
-
-sequelize
-
-```bash
-npm install sequelize@^5.19.1
-```
-
 ## Autor
 
 Desenvolvido por Diego Franco
