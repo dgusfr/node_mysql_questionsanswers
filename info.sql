@@ -18,10 +18,5 @@ INSERT INTO usuarios(nome, email, idade) VALUES (
 	18
 );
 
-INSERT INTO usuarios(nome, email, idade) VALUES (
-	"Maria",
-	"maria@email.com",
-	24
-);
 
 
