@@ -6,11 +6,7 @@ CREATE TABLE usuarios (
 
 SHOW TABLES;
 
-INSERT INTO usuarios(nome, email, idade) VALUES (
-	"Diego",
-	"diego@email.com",
-	8
-);
+
 
 
 
