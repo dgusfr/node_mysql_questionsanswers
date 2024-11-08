@@ -30,8 +30,3 @@ INSERT INTO usuarios(nome, email, idade) VALUES (
 	24
 );
 
-select * from usuarios;
-select * from usuarios where idade > 18;
-select * from usuarios where nome = "Diego";
-DELETE FROM usuarios WHERE nome = "Fulano";
-UPDATE usuarios SET idade = 19 where nome = "Maria";
