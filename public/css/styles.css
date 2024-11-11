@@ -54,6 +54,13 @@ header .title h1 {
 
 .navbar .navbar-brand img {
   height: 40px;
+  margin-right: 10px;
+}
+
+.navbar .forum-name {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
 }
 
 /* Footer */
