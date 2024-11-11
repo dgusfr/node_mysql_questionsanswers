@@ -22,13 +22,13 @@ Este projeto implementa uma plataforma de perguntas e respostas utilizando Node,
 
 <div style="display: flex; flex-direction: row;">
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
-    <img src="img/js.png" alt="Logo Linguagem" width="200" height="auto"/>
+    <img src="public/img/js.png" alt="Logo Linguagem" width="200" height="auto"/>
   </div>
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
-    <img src="img/node.png" alt="Logo Linguagem" width="200" height="auto"/>
+    <img src="public/img/node.png" alt="Logo Linguagem" width="200" height="auto"/>
   </div>
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
-    <img src="img/mysql.png" alt="Logo Linguagem" width="200" height="auto"/>
+    <img src="public/img/mysql.png" alt="Logo Linguagem" width="200" height="auto"/>
   </div>
 </div>
 
