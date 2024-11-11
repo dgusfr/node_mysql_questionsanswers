@@ -98,6 +98,33 @@ footer p {
   width: 100%;
 }
 
+.container .section-title,
+.container .form-container,
+.container .questions-container {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.form-container .btn {
+  width: 100%;
+  max-width: 200px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.questions-container .card {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 /* Card */
 .card {
   background-color: #ffffff;
