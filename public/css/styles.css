@@ -98,7 +98,7 @@ header .title h1 {
 .form-container .btn {
   width: 100%;
   max-width: 200px;
-  margin-top: 10px;
+  margin: 20px 0;
   text-align: center;
 }
 

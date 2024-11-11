@@ -13,7 +13,6 @@
 <body>
     <!-- Navbar -->
     <%- include('partials/navbar') %>
-
         <!-- Conteúdo Principal -->
         <div class="container">
             <!-- Descrição do Fórum -->
@@ -35,9 +34,11 @@
                         <h2>
                             <%= pergunta.titulo %>
                         </h2>
+                        <br>
                         <p>
                             <%= pergunta.descricao %>
                         </p>
+                        <br>
                         <a href="/pergunta/<%= pergunta.id %>" class="btn">Ver Respostas</a>
                     </div>
                     <% }); %>
