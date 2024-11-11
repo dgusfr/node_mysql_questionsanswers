@@ -5,7 +5,7 @@ Este projeto implementa uma plataforma de perguntas e respostas utilizando Node,
 ## Interface
 
 <div align="center">
-  <img src="img/logo.png" alt="Imagem do Projeto" width="900">
+  <img src="public/img/logo.png" alt="Imagem do Projeto" width="900">
 </div>
 
 ## Sumário
@@ -45,7 +45,7 @@ Este projeto implementa uma plataforma de perguntas e respostas utilizando Node,
 Responder perguntas, consultar respostas e realizar as próprias perguntas.
 
 <div align="center">
-  <img src="img/logo2.png" alt="Imagem do Projeto" width="900">
+  <img src="public/img/logo2.png" alt="Imagem do Projeto" width="900">
 </div>
 
 ## Explicação
