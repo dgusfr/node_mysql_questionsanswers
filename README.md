@@ -32,6 +32,9 @@ Este projeto implementa uma plataforma de perguntas e respostas utilizando Node,
 
 ## Tecnologias Utilizadas
 
+<br>
+
+
 <div style="display: flex; flex-direction: row;">
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
     <img src="public/img/js.png" alt="Logo Linguagem" width="200" height="auto"/>
@@ -43,6 +46,9 @@ Este projeto implementa uma plataforma de perguntas e respostas utilizando Node,
     <img src="public/img/mysql.png" alt="Logo Linguagem" width="200" height="auto"/>
   </div>
 </div>
+
+<br>
+
 
 ## Status
 
