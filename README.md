@@ -65,6 +65,8 @@ Este projeto implementa uma plataforma de perguntas e respostas utilizando Node,
 
 ## Funcionalidades
 
+<br>
+
 Responder perguntas, consultar respostas e realizar as próprias perguntas.
 
 <div align="center">
