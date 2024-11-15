@@ -89,6 +89,9 @@ O ConquisTi Forum é uma plataforma de perguntas e respostas desenvolvida com **
 - **Visualizar Perguntas**: Cada pergunta tem uma página dedicada, onde o usuário pode ver a pergunta em detalhes e visualizar as respostas.
 - **Divisões Visuais e Separações**: As seções são separadas por traços para melhorar a navegação visual.
 
+<br>
+
+
 ## Explicação
 
 Este projeto utiliza o **Sequelize** como ORM para manipulação de dados no banco de dados MySQL. As principais operações realizadas incluem:
