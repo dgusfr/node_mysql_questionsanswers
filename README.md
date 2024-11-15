@@ -100,6 +100,8 @@ Este projeto utiliza o **Sequelize** como ORM para manipulação de dados no ban
 - **Rotas**: O Express define rotas como `GET` e `POST` para permitir que os usuários naveguem, criem e respondam perguntas.
 - **Modelos do Banco de Dados**: O Sequelize é configurado para criar e manipular modelos, como `Pergunta` e `Resposta`, que representam as tabelas do banco de dados.
 
+<br>
+
 ## Autor
 
 Desenvolvido por Diego Franco
