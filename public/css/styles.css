@@ -53,8 +53,10 @@ header .title h1 {
 }
 
 .navbar .navbar-brand img {
-  height: 40px;
-  margin-right: 10px;
+  height: auto;
+  max-height: 80px;
+  max-width: 200px;
+  margin: 20px;
 }
 
 .navbar {
