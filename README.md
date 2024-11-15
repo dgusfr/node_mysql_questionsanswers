@@ -7,6 +7,8 @@ Este projeto implementa uma plataforma de perguntas e respostas utilizando Node,
 <br>
 
 ## Interface
+<br>
+
 
 <div align="center">
   <img src="public/img/logo.png" alt="Imagem do Projeto" width="900">
