@@ -2,6 +2,8 @@
 
 Este projeto implementa uma plataforma de perguntas e respostas utilizando Node, Express e MySQL.
 
+<br>
+
 ## Interface
 
 <div align="center">
