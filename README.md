@@ -78,6 +78,9 @@ Responder perguntas, consultar respostas e realizar as próprias perguntas.
 
 O ConquisTi Forum é uma plataforma de perguntas e respostas desenvolvida com **Node.js**, **Express** e **MySQL**. Este projeto tem como objetivo fornecer um ambiente onde os usuários podem compartilhar conhecimento, esclarecer dúvidas e participar de discussões sobre temas variados. A interface é intuitiva e permite que os usuários vejam as perguntas, respondam e façam novas perguntas facilmente.
 
+<br>
+
+
 ## Funcionalidades
 
 - **Página Inicial**: Lista todas as perguntas disponíveis no fórum, organizadas em ordem decrescente, mostrando título e uma breve descrição de cada pergunta.
