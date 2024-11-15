@@ -34,7 +34,6 @@ Este projeto implementa uma plataforma de perguntas e respostas utilizando Node,
 
 <br>
 
-
 <div style="display: flex; flex-direction: row;">
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
     <img src="public/img/js.png" alt="Logo Linguagem" width="200" height="auto"/>
@@ -53,6 +52,9 @@ Este projeto implementa uma plataforma de perguntas e respostas utilizando Node,
 ## Status
 
 ![Concluído](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
+
+<br>
+
 
 ## Descrição
 
