@@ -27,6 +27,9 @@ Este projeto implementa uma plataforma de perguntas e respostas utilizando Node,
 - [Como Usar](#como-usar)
 - [Autor](#autor)
 
+<br>
+
+
 ## Tecnologias Utilizadas
 
 <div style="display: flex; flex-direction: row;">
