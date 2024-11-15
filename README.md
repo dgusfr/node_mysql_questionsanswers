@@ -1,4 +1,4 @@
-# ConquisTi Forum - Projeto de Perguntas e Respostas
+# ConquisTi Forum 
 <br>
 
 
