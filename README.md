@@ -60,6 +60,9 @@ Este projeto implementa uma plataforma de perguntas e respostas utilizando Node,
 
 É possivel responder uma pergunta e também ver as outras perguntas que foram relizadas.
 
+<br>
+
+
 ## Funcionalidades
 
 Responder perguntas, consultar respostas e realizar as próprias perguntas.
