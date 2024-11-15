@@ -14,6 +14,9 @@ Este projeto implementa uma plataforma de perguntas e respostas utilizando Node,
   <img src="public/img/logo.png" alt="Imagem do Projeto" width="900">
 </div>
 
+<br>
+
+
 ## Sumário
 
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
