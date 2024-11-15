@@ -57,7 +57,7 @@ header .title h1 {
   margin-right: 10px;
 }
 
-.navbar .forum-name {
+.navbar {
   font-size: 20px;
   font-weight: bold;
   display: flex;
